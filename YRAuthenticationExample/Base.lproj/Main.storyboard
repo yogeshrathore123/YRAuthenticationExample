@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zYp-4G-DP1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YRAuthenticationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tY-2A-sdy">
+                                <rect key="frame" x="122" y="105" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login with TouchID"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8e9-aQ-61g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tro-ky-Xem">
+                                <rect key="frame" x="109" y="246" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="EncryptExampleButton"/>
+                                <connections>
+                                    <action selector="EncrytExamplaeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZw-9b-Zbn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mgD-oa-yV8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bfl-Yf-aNW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zYp-4G-DP1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fnX-TW-yrJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VXf-95-d47"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pa-B6-NZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="796.55172413793105"/>
+        </scene>
+        <!--Encrypt Decrypt View Controller-->
+        <scene sceneID="Pdv-BT-m0S">
+            <objects>
+                <viewController storyboardIdentifier="EncryptDecryptViewController" id="nxS-Pj-N8j" customClass="EncryptDecryptViewController" customModule="iOS_Quicks_Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hps-ea-42Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter String to Encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bN4-kX-Ooy">
+                                <rect key="frame" x="37.5" y="120" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RPo-cA-xaw"/>
+                                    <constraint firstAttribute="width" constant="300" id="ves-Wq-FAp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-AM-X2u">
+                                <rect key="frame" x="161" y="190" width="53" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="N7Y-6D-GQH"/>
+                                    <constraint firstAttribute="width" constant="53" id="gZN-fh-4gr"/>
+                                </constraints>
+                                <state key="normal" title="Encrypt"/>
+                                <connections>
+                                    <action selector="encryptButtonAction:" destination="nxS-Pj-N8j" eventType="touchUpInside" id="quA-1n-RK9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-yN-o4c">
+                                <rect key="frame" x="160" y="325" width="55" height="30"/>
+                                <state key="normal" title="Decrypt"/>
+                                <connections>
+                                    <action selector="decryptButtonAction:" destination="nxS-Pj-N8j" eventType="touchUpInside" id="S7F-ry-xV0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-vd-R49">
+                                <rect key="frame" x="37.5" y="225" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KxD-p0-QFm"/>
+                                    <constraint firstAttribute="height" constant="50" id="NAe-sI-t06"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrypted String" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFt-67-8WP">
+                                <rect key="frame" x="37.5" y="363" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ICC-KU-1V5"/>
+                                    <constraint firstAttribute="height" constant="50" id="hHF-sf-pMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bN4-kX-Ooy" firstAttribute="centerX" secondItem="Hps-ea-42Q" secondAttribute="centerX" id="7QL-Zx-SEq"/>
+                            <constraint firstItem="m9n-AM-X2u" firstAttribute="top" secondItem="bN4-kX-Ooy" secondAttribute="bottom" constant="40" id="BIQ-c4-w3u"/>
+                            <constraint firstItem="Bsr-vd-R49" firstAttribute="centerX" secondItem="Hps-ea-42Q" secondAttribute="centerX" id="Mla-Q3-2vP"/>
+                            <constraint firstItem="JFt-67-8WP" firstAttribute="top" secondItem="Ve5-yN-o4c" secondAttribute="bottom" constant="8" id="Nkg-Ss-nqE"/>
+                            <constraint firstItem="Bsr-vd-R49" firstAttribute="top" secondItem="m9n-AM-X2u" secondAttribute="bottom" constant="8" id="PmB-Ql-vFq"/>
+                            <constraint firstItem="Ve5-yN-o4c" firstAttribute="top" secondItem="Bsr-vd-R49" secondAttribute="bottom" constant="50" id="TaF-hU-5SE"/>
+                            <constraint firstItem="m9n-AM-X2u" firstAttribute="centerX" secondItem="Hps-ea-42Q" secondAttribute="centerX" id="c63-GY-gxP"/>
+                            <constraint firstItem="lnf-D3-MWB" firstAttribute="top" secondItem="bN4-kX-Ooy" secondAttribute="top" constant="-100" id="emT-GY-jOJ"/>
+                            <constraint firstItem="Ve5-yN-o4c" firstAttribute="centerX" secondItem="Hps-ea-42Q" secondAttribute="centerX" id="hfo-wZ-faa"/>
+                            <constraint firstItem="JFt-67-8WP" firstAttribute="centerX" secondItem="Hps-ea-42Q" secondAttribute="centerX" id="m9z-Qc-ymg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lnf-D3-MWB"/>
+                    </view>
+                    <connections>
+                        <outlet property="decryptButton" destination="Ve5-yN-o4c" id="RNW-Pw-9vw"/>
+                        <outlet property="decryptedDataLabel" destination="JFt-67-8WP" id="3wH-cl-2vY"/>
+                        <outlet property="encryptButton" destination="m9n-AM-X2u" id="ndM-2y-8pq"/>
+                        <outlet property="encyptedDataLabel" destination="Bsr-vd-R49" id="f5n-b3-Gaf"/>
+                        <outlet property="toEncryptTextField" destination="bN4-kX-Ooy" id="6Ym-Tk-4HC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwI-no-U0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="137"/>
+        </scene>
+    </scenes>
+</document>
